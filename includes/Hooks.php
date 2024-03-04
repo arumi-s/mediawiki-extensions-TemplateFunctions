@@ -25,6 +25,12 @@ class Hooks implements
 		$parser->setFunctionHook('rawparam', [TemplateFunctions::class, 'rawparam'], Parser::SFH_OBJECT_ARGS);
 		$parser->setFunctionHook('exeparam', [TemplateFunctions::class, 'exeparam']);
 		$parser->setFunctionHook('link', [TemplateFunctions::class, 'link']);
+		$parser->setFunctionHook('addlink', [TemplateFunctions::class, 'addlink']);
+		$parser->setFunctionHook('inoutro', [TemplateFunctions::class, 'inoutro'], Parser::SFH_OBJECT_ARGS);
+		$parser->setFunctionHook('htmlencode', [TemplateFunctions::class, 'htmlencode']);
+		$parser->setFunctionHook('htmldecode', [TemplateFunctions::class, 'htmldecode']);
+		$parser->setFunctionHook('urlencodequery', [TemplateFunctions::class, 'urlencodequery']);
+		$parser->setFunctionHook('convertspec', [TemplateFunctions::class, 'convertspec']);
 	}
 
 }
