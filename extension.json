@@ -1,0 +1,31 @@
+{
+	"name": "TemplateFunctions",
+	"version": "1.0.0",
+	"author": ["Sakura Arumi"],
+	"url": "https://github.com/arumi-s/mediawiki-extensions-TemplateFunctions",
+	"descriptionmsg": "templatefunctions_desc",
+	"license-name": "MIT",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
+	"ExtensionMessagesFiles": {
+		"TemplateFunctionsMagic": "TemplateFunctions.i18n.magic.php"
+	},
+	"MessagesDirs": {
+		"TemplateFunctions": ["i18n"]
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "TemplateFunctionsHookHandler"
+	},
+	"HookHandlers": {
+		"TemplateFunctionsHookHandler": {
+			"class": "MediaWiki\\Extension\\TemplateFunctions\\Hooks",
+			"services": []
+		}
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\TemplateFunctions\\": "includes/"
+	},
+	"manifest_version": 2
+}
