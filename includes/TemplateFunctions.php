@@ -282,6 +282,18 @@ class TemplateFunctions
 	}
 
 	/**
+	 * Strip HTML and PHP tags from a string.
+	 * 
+	 * @param Parser $parser
+	 * @param string $text
+	 * @return string
+	 */
+	public static function striptags($parser, $text = '')
+	{
+		return strip_tags($text);
+	}
+
+	/**
 	 * Fetches content of target page if valid and found, otherwise
 	 * produces wikitext of a link to the target page.
 	 * 

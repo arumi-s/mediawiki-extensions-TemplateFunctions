@@ -1,4 +1,4 @@
-# TemplateFunctions v1.1.0
+# TemplateFunctions v1.2.0
 
 This MediaWiki extension provides parser functiions that can be used in templates.
 
@@ -15,3 +15,4 @@ This MediaWiki extension provides parser functiions that can be used in template
 - `{{#htmldecode:}}`
 - `{{#urlencodequery:}}`
 - `{{#convertspec:}}`
+- `{{#striptags:}}`

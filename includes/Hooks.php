@@ -31,6 +31,7 @@ class Hooks implements
 		$parser->setFunctionHook('htmldecode', [TemplateFunctions::class, 'htmldecode']);
 		$parser->setFunctionHook('urlencodequery', [TemplateFunctions::class, 'urlencodequery']);
 		$parser->setFunctionHook('convertspec', [TemplateFunctions::class, 'convertspec']);
+		$parser->setFunctionHook('striptags', [TemplateFunctions::class, 'striptags']);
 	}
 
 }

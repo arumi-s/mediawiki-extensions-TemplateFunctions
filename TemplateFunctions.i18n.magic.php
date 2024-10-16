@@ -21,4 +21,5 @@ $magicWords['en'] = [
 	'htmldecode' => [0, 'htmldecode'],
 	'urlencodequery' => [0, 'urlencodequery'],
 	'convertspec' => [0, 'convertspec'],
+	'striptags' => [0, 'striptags'],
 ];
